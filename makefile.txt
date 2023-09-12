@@ -1,0 +1,14 @@
+1、cd到源文件所在目录
+2、vim makefile
+
+    (1)main:main.o
+           g++ main.o -o main
+
+    (2)main.o:test.cpp
+           g++ test.cpp -c -Wall -o main.o
+
+    (3)clean:
+           rm *.o main -rf
+
+3、make
+4、chmod 777 main
